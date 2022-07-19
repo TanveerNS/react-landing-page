@@ -1,0 +1,278 @@
+@import "../assets/scss/variables.scss";
+
+.headerlogo.MuiCardMedia-root {
+  width: 52px;
+}
+.logowrapper,
+.searchwrapper {
+  display: flex;
+}
+.toolbarwrapper.MuiToolbar-root {
+  justify-content: space-between;
+}
+.iconwrapper.MuiIconButton-root {
+  margin-right: 16px;
+}
+.searchinput.MuiInputBase-input {
+  padding: 12px 8px 8px 0px;
+}
+.searchinput {
+  background: transparent;
+  outline: none;
+  border: none;
+  color: $thema-secondary-text-color;
+  font-size: 1rem;
+  width: 100%;
+  margin-right: 14px;
+}
+// .searchinput:focus {
+//   width: 360px;
+// }
+.searchbase {
+  display: flex;
+  position: relative;
+  border-radius: 50px;
+  background-color: $thema-base-bg;
+  margin: 6px 0;
+  width: 100%;
+}
+.searchbase:hover {
+  background-color: $thema-base-change;
+}
+.iconwarpper {
+  padding: 0px 16px;
+  height: 100%;
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+.drawericon.MuiSvgIcon-root {
+  font-size: 20px;
+  color: $thema-main;
+}
+.drawerlinkname.MuiTypography-root {
+  padding: 12px 24px;
+  line-height: 4;
+  font-weight: normal;
+}
+.drawerwrapper {
+  width: 280px;
+}
+a.list-item-link {
+  text-decoration: none;
+  color: $thema-primary-text-color;
+}
+.search-list {
+  display: none;
+  position: absolute;
+  top: 36px;
+  left: 0;
+  width: 100%;
+  height: 40vh;
+  background-color: $thema-primary-bg-color;
+  border-radius: 2px;
+  overflow: scroll;
+  padding: 20px 10px;
+  padding-bottom: 0rem;
+  border-radius: 1rem;
+  &.expanded {
+    display: block;
+    // overflow:hidden;
+  }
+  & li {
+    color: $thema-primary-text-color;
+    font-size: 1rem;
+    line-height: 2;
+    border-bottom: 1px solid #8080804d;
+    cursor:pointer;
+    & a {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      text-decoration: none;
+      color: $thema-primary-text-color;
+      opacity: 0.8;
+      font-size: $fs-normal;
+      & span:first-child {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+      & span:last-child {
+        padding-left: 1rem;
+        opacity: 0.7;
+        font-size: $fs-dot7;
+      }
+    }
+  }
+  & p {
+    color: $thema-primary-text-color;
+    opacity: 0.8;
+    font-size: $fs-normal;
+    margin-bottom: 0.5rem;
+  }
+}
+
+.search-list::-webkit-scrollbar-thumb {
+  background: $thema-secondary-bg-color;
+  padding-top: 30px;
+}
+
+.search-list::-webkit-scrollbar {
+  width: 0px;
+  height: 0px;
+  background-color: $thema-light;
+}
+
+.search-container {
+  display: flex;
+}
+
+.close-container {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  &.expanded {
+    display: flex;
+  }
+  & svg {
+    color: $thema-secondary-text-color;
+    margin-right: 6px;
+  }
+}
+
+.list-overlay-text {
+  float: right;
+}
+
+
+
+.avatar-header-logo{
+  width:24px;
+  height:24px;
+  border-radius:12px;
+}
+a.logo-imag-ishtihar{
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+a.logo-imag-ishtihar:hover{
+  text-decoration: none;
+}
+p.logo-title-ishtihar{
+  color: #fff;
+    margin: 0;
+    font-size: 23px;
+    text-decoration: none;
+    margin-left:-8px;
+    opacity:0.8;
+}
+p.logo-title-ishtihar:hover,p.logo-title-ishtihar:focus{
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 1536px) {
+}
+@media only screen and (max-width: 1200px) {
+}
+
+@media only screen and (max-width: 900px) {
+  // .searchinput:focus {
+  //   width: 360px;
+  // }
+}
+@media only screen and (max-width: 700px) {
+  // .searchinput:focus {
+  //   width: 280px;
+  // }
+}
+
+@media only screen and (max-width: 600px) {
+  .searchbase {
+    background-color: transparent;
+    &:hover {
+      background-color: transparent;
+    }
+    &.search-box-wrapper-expand {
+      position: fixed;
+      top: 0px;
+      right: 0;
+      width: 100% !important;
+      height: 100%;
+      z-index: 100;
+      background-color: $thema-primary-bg-color !important;
+      border-radius: unset;
+      align-items: unset;
+      margin: 0;
+      padding: 1rem 0.75rem;
+      .iconwarpper {
+        &.iconwarpper-wrapper-expand {
+          width: 40px;
+          height: 40px;
+          & svg {
+            color: $thema-primary-text-color;
+          }
+          border: 1px solid $thema-dark;
+          border-right: none;
+          border-top-left-radius: 50px;
+          border-bottom-left-radius: 50px;
+        }
+      }
+      .search-container {
+        &.search-container-wrapper-expand {
+          height: 40px;
+          width: 100%;
+          border: 1px solid $thema-dark;
+          border-left: none;
+          border-top-right-radius: 50px;
+          border-bottom-right-radius: 50px;
+          & .searchinput {
+            color: $thema-primary-text-color;
+            display: flex;
+            border-left: 1px solid $thema-dark;
+            padding-left: 0.75rem;
+          }
+        }
+      }
+      .close-container {
+        &.close-container-wrapper-expand {
+          width: 40px;
+          height: 40px;
+          display: flex;
+          & svg {
+            color: $thema-primary-text-color;
+          }
+        }
+      }
+      .search-list {
+        &.list-container-wrapper-expand {
+          top: 57px;
+          width: 90%;
+          left: 12px;
+          height: 80vh;
+          &.expanded {
+            display: block;
+          }
+        }
+      }
+    }
+  }
+  .searchinput {
+    display: none;
+  }
+  .searchinput:focus {
+    display: flex;
+  }
+}
+

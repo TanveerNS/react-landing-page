@@ -1,0 +1,53 @@
+@import "../assets/scss/variables.scss";
+
+.footer{
+    background-color: $thema-dark-gray;
+
+    & .fottercopyright{
+        margin: 0;
+        font-family: "Roboto","Helvetica","Arial",sans-serif;
+        font-weight: 400;
+        font-size: 0.875rem;
+        line-height: 1.43;
+        letter-spacing: 0.01071em;
+        text-align: center;
+        color: #fff;
+        margin-top: 32px;
+    }
+
+    & .footer-title{
+        margin: 0;
+        font-family: "Roboto","Helvetica","Arial",sans-serif;
+        font-weight: 400;
+        font-size: 1rem;
+        line-height: 1.5;
+        letter-spacing: 0.00938em;
+        font-weight:700;
+        color:$thema-secondary-text-color;
+    }
+}
+.footerWraper {
+    margin-top : 4rem !important;
+    margin-bottom: 3rem !important;
+}
+.footerlinklist.MuiMenuItem-root{
+    padding-left:0;
+}
+.footer-link-list{
+    margin: 0;
+    font-weight: 300;
+    font-size: 0.875rem;
+    line-height: 1.43;
+    letter-spacing: 0.01071em;
+    color: $thema-secondary-text-color;
+    font-weight: 300;
+    -webkit-text-decoration: none;
+    text-decoration: none;
+    &.disabled-css{
+        pointer-events: none;
+    }
+}
+.footer-link-list:hover{
+    
+    color:$thema-secondary-text-color;
+}

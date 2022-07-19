@@ -1,0 +1,100 @@
+.homeFeaturesWrap{
+display: flex;
+align-items: center;
+justify-content: center;
+
+.homeFeatures{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 50px;
+    background-color: #fff;
+    border-radius: 3px;
+    // box-shadow: 0 11px 20px 0 #2222221a;
+    // box-shadow: 0 11px 20px 0 #2222221a;
+    transform: translateY(-120px);
+    margin-bottom: -50px;
+    z-index: 2;
+    & .items{
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        max-width: 280px;
+    }
+    & .title{
+        font-size: 18px;
+        line-height: 1.33;
+        font-weight: 700;
+        color: #555;
+        color: var(--color-neutral-600,#555);
+    }
+    & .button{
+        position: relative;
+        color: #fff;
+        background-color: #1caad9;
+        transition: background-color .15s ease;
+        border: 0;
+        border-color: "";
+        border-style: solid;
+        border-radius: 4px;
+        min-height: 45px;
+        font-size: 1rem;
+        padding: 0 16px;
+        display: flex;
+        align-items: center;
+        font-weight: 500;
+        text-transform: uppercase;
+        & :hover{
+            background-color: #1c88bb;
+        }
+    }
+}
+}
+
+
+.modelWrap{
+    background-color: #e8f7fb;
+    & .modelContainer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        & .title{
+            color:#1caad9;
+            font-size:1.5rem;
+        }
+    }
+    & .modelFeatures{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 675px;
+        margin: 30px auto 60px;
+        & .items{
+            flex-basis: calc(50% - 40px);
+            display: flex;
+            align-items: center;
+            margin: 20px;
+            & .itemImg{
+                height: 72px;
+                width: 72px;
+                flex-shrink: 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 100%;
+                background-color: #fff;
+            }
+            & .subtitle{
+                color: #555;
+                font-size: 14px;
+                margin: 0 0 0 20px;
+                text-align: left;
+            }
+        }
+    }
+}
